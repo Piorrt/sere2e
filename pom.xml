@@ -28,9 +28,9 @@
 		<webdriver.chrome.driver>C:\Users\sg0950052\.m2\repository\webdriver\chromedriver\win32\2.33\chromedriver.exe</webdriver.chrome.driver>
 		<webdriver.driver>chrome</webdriver.driver>
 
-		<bs_url></bs_url>
-		<bs_os>WINDOWS</bs_os>
-		<bs_browser>chrome</bs_browser>
+		<bs.url></bs.url>
+		<bs.os>WINDOWS</bs.os>
+		<bs.browser>chrome</bs.browser>
 	</properties>
 
 	<repositories>
@@ -132,9 +132,9 @@
 						<!--<webdriver.chrome.driver>${webdriver.chrome.driver}</webdriver.chrome.driver>-->
 						<!--<webdriver.driver>${}</webdriver.driver>-->
 
-						<browserstack.url>${bs_url}</browserstack.url>
-						<browserstack.os>${bs_os}</browserstack.os>
-						<browserstack.browser>${bs_browser}</browserstack.browser>
+						<browserstack.url>${bs.url}</browserstack.url>
+						<browserstack.os>${bs.os}</browserstack.os>
+						<browserstack.browser>${bs.browser}</browserstack.browser>
 
 					</systemPropertyVariables>
 					<parallel>classes</parallel>
@@ -183,15 +183,15 @@
 		<profile>
 			<id>bs-osx-safari</id>
 			<properties>
-				<bs_os>OSX</bs_os>
-				<bs_browser>Safari</bs_browser>
+				<bs.os>OSX</bs.os>
+				<bs.browser>Safari</bs.browser>
 			</properties>
 		</profile>
 		<profile>
 			<id>bs-osx-opera</id>
 			<properties>
-				<bs_os>OSX</bs_os>
-				<bs_browser>Opera</bs_browser>
+				<bs.os>OSX</bs.os>
+				<bs.browser>Opera</bs.browser>
 			</properties>
 		</profile>
 	</profiles>
